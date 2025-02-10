@@ -1,0 +1,193 @@
+.LoginPage_Bar {
+    background-color: #b3404b;
+    max-height: 5rem;
+    min-height: 5rem;
+    display: flex;
+    border-bottom: 2px solid rgba(80,78,78,0.8);
+    text-align: center;
+    
+}
+
+.Login_Logo{
+  margin-top: 0.35rem;
+  width: 15rem;
+  height: 4rem;
+}
+
+
+.Login_ContainerForms{
+    margin-top: 4rem;
+    border-radius: 5px;
+    padding-top: 1px;
+    height: 35rem;
+    background-color: white;
+    -webkit-box-shadow: 9px 4px 36px 10px rgba(98,115,128,0.57);
+    -moz-box-shadow: 9px 4px 36px 10px rgba(98,115,128,0.57);
+    box-shadow: 9px 4px 36px 10px rgba(98,115,128,0.57);
+    justify-content: center;
+}
+
+
+.Login_FormText{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    font-weight: bold;
+}
+
+.Login_SmallLabel{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+.Login_Labels{
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+.Login_Inputs{
+    color: black;
+}
+
+.Login_DivCheckBox{
+justify-content: center;
+text-align: center;
+}
+
+
+/* CAMBIOS EN LAS CLASES DE BOOSTRAP */
+.form-control:focus {
+    border-color: #b3404b;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+  }
+
+  .form-check-input {
+    width: 20px; 
+    height: 20px; 
+    border: 2px solid #b3404b; 
+    border-radius: 3px; 
+    background-color: white; 
+    margin-right: 5px; 
+  }
+  
+  .form-check-input:checked {
+    background-color: #b3404b; 
+    border: 2px solid #b3404b; 
+  }
+
+  .form-check-input:focus {
+    border-color: #b3404b;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+  }
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.Login_MissPasswordText{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: #92357e; 
+}
+
+.Login_InputButton{
+    border-radius: 4px;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    background-color:#b3404b;
+    border: 2px solid white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+
+  .Login_InputButton:hover{
+    background-color:#92343d;
+    border: 2px solid black;
+    color: black;
+  }
+
+
+
+
+  /* TO DO: Entender mejor Crea una linea con una O */
+
+  .CustomLine {
+    position: relative;
+    margin-top: 1rem;
+    height: 1px;
+    background-color: black;
+  }
+  
+  .CustomLine .Letter {
+    position: absolute;
+    top: -10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    padding: 5px 10px; 
+    border-radius: 50%;
+  }
+
+  /*///////////////////////////////////////////////////////////*/
+
+
+  .Login_ButtonFacebook{
+    border-radius: 4px;
+    height: auto;
+    width: 100%;
+    font-size: 1rem;
+    background-color: rgba(80,78,78,0.8);
+    border: 2px solid white;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin-top: 2rem;
+  }
+
+
+  .Login_ButtonFacebook:hover{
+    border-radius: 4px;
+    height: auto;
+    width: 100%;
+    font-size: 1rem;
+    background-color:#b3404b;
+    border: 2px solid white;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+
+
+  .Login_FBLogo{
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.3rem;
+    margin-right: 1rem;
+}
+
+
+.FooterStyle{
+  position: fixed;
+  height: 2rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(80,78,78,0.8);
+  color: white;
+  text-align: center;
+}
+
+
+.FooterText{
+ color: white;
+ font-weight: bold;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}

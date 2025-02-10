@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../Librerias/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+
+    <!-- Libreria para iconos de boostrap Font Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../../CSS/Profiles/Home.css">
+    <link rel="stylesheet" href="../../../CSS/General Styles/navbar.css">
+
+</head>
+<body>
+
+    <!-- Nav bar -->
+    <div class="row Navbar_Container">
+        <div class="col-lg-3 col-sm-4">
+            <a href="../../../HTML/Profiles/Home.html"><img src="../../../Images/Tilted_Shop_Logo.png"
+                    class="Navbar_Logo" alt="Tilted Shop Icon"></a>
+
+        </div>
+
+        <div class="col-lg-6 col-sm-4 ">
+            <div class="container Navbar_SearchBar">
+                <div class="input-group">
+                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                        aria-describedby="search-addon" />
+                    <a href="../../../HTML/Profiles/Search_Result.html"
+                        class="btn btn-primary Navbar_SearchButton">Buscar</a>
+                    <div class="mt-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-1 col-sm-4">
+            <div class="dropdown">
+                <a class="btn dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                    <small> Hola <b> @Usuario </b> </small>
+                    <br>
+                    <b>Cuenta y Más </b>
+                </a>
+
+                <ul class="dropdown-menu Navbar_DropdownMenu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Client(Self)/Profile_ClientS.html">Mi Perfil</a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Client(Self)/my_orders.html">Mis pedidos</a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Client(Self)/Messages_Client.html">Mis mensajes</a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton" href="../../General/index.html">Cerrar sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="col-lg-2 col-sm-4">
+            <a href="../../../HTML/Profiles/Client(Self)/Shopping_Cart.html">
+                <img src="../../../Images/Edit_Profile_Images/Car_icon.jpg" class="Navbar_CarLogo" alt="Cart icon">
+            </a>
+            <div class="Navbar_CarText">
+                <a class="Navbar_CartHL" href="../../../HTML/Profiles/Client(Self)/Shopping_Cart.html"> Mi Carrito </a>
+            </div>
+        </div>
+    </div>
+    <!-- Nav bar end-->
+
+    
+    <!-- Carrusel de imagenes -->
+    <!-- data-bs-ride="carousel" -->
+ 
+    <div id="carouselCaptions" class="carousel slide color-carrusel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          
+          <div class="carousel-item active">
+                <div class="container-fluid"> 
+                    <div class="row p-5">
+                            <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                                <img src="../../Images/Items_Images/eva1.png" class="img-fluid" alt="imagen 1">    
+                            </div>
+                        
+                        <div class="col-lg-6 mb-0 d-flex align-items-center info-banner">
+                            <div class="text-align-left align-self-center">
+                                <h1 class="h1 text-success"><b>Nuevo</b> kit</h1>
+                                <h3 class="h2">Muy pronto estara a la venta!</h3>
+                                <p>
+                                    Nos complace anunciar que pronto estara a la venta nuestro kit de piezas
+                                    para PC con tematica del Eva 01
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+
+                    
+        <div class="carousel-item">
+                <div class="container-fluid"> 
+                    <div class="row p-5">
+                            <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                                <img src="../../Images/Items_Images/eva2.png" class="img-fluid" alt="imagen 1">    
+                            </div>
+                        
+                        <div class="col-lg-6 mb-0 d-flex align-items-center info-banner">
+                            <div class="text-align-left align-self-center">
+                                <h1 class="h1 text-success"><b>Nuevo</b> kit</h1>
+                                <h3 class="h2">Muy pronto estara a la venta!</h3>
+                                <p>
+                                    Nos complace anunciar que pronto estara a la venta nuestro kit de piezas
+                                    para PC con tematica del Eva 02
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+                
+        <div class="carousel-item">
+            <div class="container-fluid"> 
+                <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img src="../../Images/Items_Images/utiles4.png" class="img-fluid" alt="imagen 1">    
+                        </div>
+                    
+                    <div class="col-lg-6 mb-0 d-flex align-items-center info-banner">
+                        <div class="text-align-left align-self-center">
+                            <h1 class="h1 text-success"><b>Nuevo</b> kit</h1>
+                            <h3 class="h2">Muy pronto estara a la venta!</h3>
+                            <p>
+                                Nos complace anunciar que pronto estara a la venta nuestro kit de piezas
+                                para utiles escolares
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div class="carousel-controls-container d-flex justify-content-between">
+            
+            <button class="carousel-control-prev  w-auto ps-3" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next  w-auto ps-3" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+
+    </div>
+     
+    <!-- End carrusel -->
+    
+
+    <!-- Elementos recientes -->
+    <!-- antes la class del section era bg-dark -->
+    <section class="bg-light">
+        <div class="container py-5">
+            <div class="row text-center py-3">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="">Productos mas vendidos!</h1>
+                    <p class="">
+                        Disfruta de los productos mas vendidos en nuestro catalogo, 
+                        no dejes pasar la oportunidad de comprar lo que esta en boca
+                        de todos aqui en "Tilted Shop"
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="../../HTML/Profiles/Products_Detail.html">
+                            <div class="container equal-image-container">  
+
+                                <img src="../../Images/Items_Images/peluche2.png" class="card-img-top img-fluid equal-image" alt="...">
+
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">$240.00</li>
+                            </ul>
+                            <a href="../../HTML/Profiles/Products_Detail.html" class="h2 text-decoration-none text-dark">Peluche de Chayane</a>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
+                            </p>
+                            <p class="text-muted">Reviews (24)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="../../HTML/Profiles/Products_Detail.html">
+
+                            <div class="container equal-image-container"> 
+
+                                <img src="../../Images/Items_Images/cpu3.png" class="card-img-top img-fluid equal-image" alt="...">
+
+                            </div>
+                            
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">$480.00</li>
+                            </ul>
+                            <a href="../../HTML/Profiles/Products_Detail.html" class="h2 text-decoration-none text-dark">Procesador Intel Core i9 de 11va generación</a>
+                            <p class="card-text">
+                                Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.
+                            </p>
+                            <p class="text-muted">Reviews (48)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="../../HTML/Profiles/Products_DetailC.html">
+                            <div class="container equal-image-container"> 
+                            <img src="../../Images/Items_Images/llanta1.png" class="card-img-top img-fluid equal-image" alt="...">
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </li>
+                            </ul>
+                            <a href="../../HTML/Profiles/Products_DetailC.html" class="h2 text-decoration-none text-dark">Llantas</a>
+                            <p class="card-text">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.
+                            </p>
+                            <p class="text-muted">Reviews (74)</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End recientes -->
+
+       <!-- Elementos recientes -->
+    <!-- antes la class del section era bg-dark -->
+    <section class="fondo-menu-inicio">
+        <div class="container py-5">
+            <div class="row text-center py-3">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="titulos-menu">Productos populares!</h1>
+                    <p class="parrafos-menu">
+                        Disfruta de los productos mejor valorados en nuestra tienda, 
+                        animate confiamos en que serán de tu agrado.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="../../HTML/Profiles/Products_Detail.html">
+                            <div class="container equal-image-container "> 
+
+                                <img src="../../Images/Items_Images/peluche2.png" class="card-img-top img-fluid equal-image" alt="...">
+
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">$240.00</li>
+                            </ul>
+                            <a href="../../HTML/Profiles/Products_Detail.html" class="h2 text-decoration-none text-dark">Peluche de Chayane</a>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
+                            </p>
+                            <p class="text-muted">Reviews (24)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="../../HTML/Profiles/Products_Detail.html">
+
+                            <div class="container equal-image-container"> 
+
+                                <img src="../../Images/Items_Images/cpu3.png" class="card-img-top img-fluid equal-image" alt="...">
+
+                            </div>
+                            
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">$480.00</li>
+                            </ul>
+                            <a href="../../HTML/Profiles/Products_Detail.html" class="h2 text-decoration-none text-dark">Procesador Intel Core i9 de 11va generación</a>
+                            <p class="card-text">
+                                Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.
+                            </p>
+                            <p class="text-muted">Reviews (48)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="../../HTML/Profiles/Products_DetailC.html">
+                            <div class="container equal-image-container"> 
+                                <img src="../../Images/Items_Images/llanta2.png" class="card-img-top img-fluid equal-image" alt="...">
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </li>
+                            </ul>
+                            <a href="../../HTML/Profiles/Products_DetailC.html" class="h2 text-decoration-none text-dark">Llantas</a>
+                            <p class="card-text">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.
+                            </p>
+                            <p class="text-muted">Reviews (74)</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End recientes -->
+
+    <!-- Scripts -->
+    
+    <script src="../../../Librerias/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../../Librerias/popper/popper.min.js"></script>
+    <script src="../../../Librerias/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+</body>
+
+<!-- Footer -->
+<div class="FooterStyle">
+    <span class="FooterText"> Copyright © 2023 - All rights reserved || Designed By: Luis & Max. </span>
+
+</div>
+<!-- End footer-->
+
+
+</html>

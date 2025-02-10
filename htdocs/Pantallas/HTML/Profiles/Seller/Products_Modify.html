@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../../Librerias/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    
+    <!-- CSS para la Nav Bar-->
+    <link rel="stylesheet" href="../../../CSS/Profiles/ActionsSeller/Products_Modify.css">
+    <link rel="stylesheet" href="../../../CSS/General Styles/navbar.css">
+    <link rel="stylesheet" href="../../../CSS/General Styles/footer.css">
+    <link rel="stylesheet" href="../../../CSS/General Styles/background.css">
+
+</head>
+<body>
+    
+      <!-- Nav bar -->
+      <div class="row Navbar_Container">
+        <div class="col-lg-3 col-sm-1 ">
+            <a href="../../../HTML/Profiles/Seller/My_Products.html">
+                <img src="../../../Images/Tilted_Shop_Logo.png" class="Navbar_Logo" alt="Tilted Shop Icon">
+            </a>
+        </div>
+
+        <div class="col-lg-1 col-sm-4 offset-sm-6 offset-lg-6">
+            <div class="dropdown">
+                <a class="btn dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                    <small> Hola <b> @Usuario </b> </small>
+                    <br>
+                    <b>Cuenta y Más </b>
+                </a>
+
+                <ul class="dropdown-menu Navbar_DropdownMenu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Seller/Profile_SellerS.html">Perfil</a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Seller/My_Products.html">Mis productos</a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Seller/Products_TBD.html">Mis productos cotizados
+                        </a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Seller/Products_New.html">Agregar Producto
+                        </a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Seller/Products_NewC.html">Agregar Producto Cotizado
+                        </a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Seller/Messages_Seller.html">Mis mensajes</a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton" href="../../../HTML/General/index.html">Cerrar
+                            sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Nav bar end-->
+
+    <!-- Ventana de pago  -->
+    <section class="py-5 fondo-color"> <!-- Cambie margin por padding para poder pintar el fondo-->
+      <div class="container align-items-center justify-content-center">
+        <div class="row ">
+
+            <!-- Card -->
+            <div class="col-sm-12">
+                <div class="card border shadow-0 fondo-card">
+                
+                    <div class="m-4">
+                        <!-- Header de la card-->
+                        <h2 class="card-title mb-4 text-center encabezado">Editar Producto</h2>
+                        
+                        <!-- Linea de separacion del header y el body-->
+                        <hr class="mb-4 linea-separacion">
+                        
+                        <!-- Body de la card-->
+                        
+                        <div class="card-body p-0">                        
+
+                            <!-- Inicia form baja-->
+                            <form>
+                                <div class="form-group d-flex align-items-center justify-content-center flex-column">
+                                    <h2 class="mb-4">¿Desea eliminar este producto?:</h2>
+                                        <!-- Botón para crear producto -->
+                                        <div class="col-sm-4 d-flex align-items-center justify-content-center"> 
+                                            <button onclick="DeleteProduct()" type="submit" class="btn btn-primary btn-generico mx-auto"><i class="fas fa-trash-alt fa-lg px-1 text-secondary"></i>Eliminar Producto</button>
+                                        </div>
+                                </div>
+                            </form>
+                            <!-- END form baja-->
+
+                            <hr class="mb-4 linea-separacion">
+
+                            <!-- Inica el forms -->
+                            <form>
+
+                                <!-- Datos iniciales del producto-->
+                                <div class="row mb-4 "> 
+                                    <h2 class="mb-4 text-center">¿Desea actualizar el contenido de este producto?:</h2>
+                                    <h3 class="mb-3">Información del producto:</h3>
+                                    <div class="col-sm-6 mb-3">
+                                        <label for="nombreProducto">Nombre del producto:</label>
+                                        <input type="text" class="form-control" id="nombreProducto" name="nombreProducto" placeholder="Ejemplo: Vaso de plastico" value="Balon de futbol" required>
+                                    </div>
+
+                                    <div class="col-sm-12 mb-3">
+                                        <label for="descripcionProducto">Descripción del producto:</label>
+                                        <textarea class="form-control" id="descripcionProducto" name="descripcionProducto" placeholder="Ejemplo: Vaso con diseño ergonomico, hecho de plasticos duraderos..." required> Balon estandar, en colores blanco y negro  tradicional, perfecto para partidos en cancha normal, de pasto sintético o de futbol rápido </textarea>
+                                    </div>
+                                    
+                                    <div class="col-sm-6 mb-3 ">
+                                        <label for="precioProducto">Precio del producto (MXN):</label>
+                                        <input type="number" class="form-control campos-compartidos" id="precioProducto" name="precioProducto" placeholder="Ejemplo: 10.99" value="500" required>
+                                    </div>
+
+                                    <div class="col-sm-6 mb-4 ">
+                                        <label for="inventarioProducto">Inventario del producto:</label>
+                                        <input type="number" class="form-control campos-compartidos" id="inventarioProducto" name="inventarioProducto" placeholder="Ejemplo: 5000" value="2000" required>
+                                    </div>
+                                </div>
+
+                                <hr class="mb-4 linea-separacion">
+
+                                <!-- Categorias -->
+                                <div class="row mb-4">
+                                    <h3 class="mb-4">Categorias a las que pertence:</h3>
+
+                                    <div class=" col-sm-12 col-lg-4">
+                                        <select id="categorias" class="form-select mb-2 icon-hover">
+                                            <option value="categoria1">Videojuegos</option>
+                                            <option value="categoria2">Cocina</option>
+                                            <option value="categoria3">Jardineria</option>
+                                            <option value="categoria3">Electronica</option>
+                                            <option value="categoria3">Autos</option>
+                                            <!-- Agrega más opciones de categorías según sea necesario -->
+                                        </select>
+                                        
+                                        <div class="d-flex justify-content-center align-item-center">
+                                            <button id="agregarCategoria" class="btn btn-success mb-2 me-2">Agregar</button>
+                                            <button id="quitarCategoria" class="btn btn-danger mb-2">Quitar</button>
+                                        </div>
+
+
+                                    </div>
+                                    
+                                  
+                                    <div id="categoriasSeleccionadas" class="cuadro-categorias col-sm-12 col-lg-8 mb-2">
+                                        <!-- Aquí se mostrarán las categorías seleccionadas -->
+                                           <!-- Etiquetas de ejemplo -->
+                                            <label class="badge bg-primary me-2">Deportes</label>
+                                            <label class="badge bg-success me-2">Futbol</label>                                            
+                                    </div>
+
+                                </div>
+
+                                <hr class="mb-4 linea-separacion">
+
+                                <!-- Imagenes y videos -->
+                                <div class="row mb-4">
+                                    <h3 class="mb-4">Imagenes y videos:</h3>
+
+                                    <!-- Campo para cargar la primera imagen -->
+                                    <!-- d-flex flex-column align-items-center si borro esto de las imagenes queda mas chico el hueco -->
+                                    <div class="col-sm-12 col-md-4 mb-3 d-flex flex-column align-items-center">
+                                        <label for="imagen1"><h4> Imagen 1: </h4></label>
+                                        <input type="file" class="form-control-file" id="imagen1" name="imagen1" accept="image/*">
+                                        <img id="imagenPreview1" class="img-thumbnail mt-2" src="../../../Images/Items_Images/alexa1.png" alt="Vista previa de la imagen 1" style="max-width: 100%; height: 300px;" style="display: none;">
+                                    </div>
+                                    
+                                    <!-- Campo para cargar la segunda imagen -->
+                                    <div class="col-sm-12 col-md-4 mb-3 d-flex flex-column align-items-center">
+                                        <label for="imagen2"><h4> Imagen 2: </h4></label>
+                                        <input type="file" class="form-control-file" id="imagen2" name="imagen2" accept="image/*">
+                                        <img id="imagenPreview2" class="img-thumbnail mt-2" src="../../../Images/Items_Images/alexa3.png" alt="Vista previa de la imagen 2" style="max-width: 100%; height: 300px;" style="display: none;">
+                                    </div>
+                                    
+                                    <!-- Campo para cargar la tercera imagen -->
+                                    <div class="col-sm-12 col-md-4 mb-3 d-flex flex-column align-items-center">
+                                        <label for="imagen3"><h4> Imagen 3: </h4></label>
+                                        <input type="file" class="form-control-file" id="imagen3" name="imagen3" accept="image/*">
+                                        <img id="imagenPreview3" class="img-thumbnail mt-2" src="../../../Images/Items_Images/alexa2.png" alt="Vista previa de la imagen 3" style="max-width: 100%; height: 300px;" style="display: none;">
+                                    </div>
+
+                                    <!-- Campo para cargar el video -->
+                                    <div class="col-md-12 mt-2 d-flex flex-column align-items-center">
+                                        <label for="video"><h4> Video: </h4></label>
+                                        <input type="file" class="form-control-file" id="video" name="video" accept="video/*">
+                                        <video id="videoPreview" controls class="mt-2" style="max-width: 100%; height: 300px;" style="display: none;">
+                                            <source src="../../../Videos/video1.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                
+
+                                </div>
+
+                            
+                                <hr class="mb-4 linea-separacion">
+
+                                <!-- Botón para crear producto -->
+                                <div class="d-flex align-item-center justify-content-center"> 
+                                    <button onclick="ModifyProduct()" type="submit" class="btn btn-primary btn-comprar">Actualizar Cambios</button>
+                                </div>
+
+                            </form>
+
+                        </div>
+                
+                    </div>             
+                </div>
+             </div>
+             <!-- End Card -->
+          
+        </div>
+      </div>
+    </section>
+
+    <script src="../../../Librerias/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../../Librerias/popper/popper.min.js"></script>
+    <script src="../../../Librerias/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="../../../JS/Seller/Creacion_Nuevo_Producto.js" ></script>
+    <script src="../../../JS/Seller/Modificación_Producto.js" ></script>
+    
+</body>
+</html>

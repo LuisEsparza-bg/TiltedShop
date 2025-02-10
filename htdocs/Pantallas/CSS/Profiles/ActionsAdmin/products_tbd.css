@@ -1,0 +1,173 @@
+.ProfileA_Container,
+.ProfileA_ContainerLists {
+    background-color: rgb(235, 235, 235);
+    border-radius: 1px;
+    display: flex;
+}
+
+.ProfileA_ContainerPhoto {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    border: 2px solid black;
+}
+
+.ProfileA_Containertext,
+.ProfileA_ContainertextSmall,
+.ProfileA_ListText,
+.ProfileA_ListTextDescription,
+.ProfileA_HeaderObjects {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    color: black;
+    padding: 1rem;
+}
+
+.ProfileA_ContainertextSmall {
+    font-size: smaller;
+}
+
+.ProfileA_ContainerLists {
+    background-color: rgb(184, 184, 184);
+    border-radius: 1px;
+}
+
+.ProfileA_ListDropdown {
+    background-color: rgb(184, 184, 184);
+    text-align: center;
+}
+
+.ProfileA_ListText {
+    font-size: larger;
+    font-weight: normal;
+    margin-bottom: -1.5rem;
+}
+
+.Profile_ValidateProductBtn, .Profile_DevalidateProductBtn {
+    border-radius: 4px;
+    font-size: 1rem;
+    margin: 0.5rem;
+    background-color: #ce1326;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.Profile_DevalidateProductBtn:hover {
+    background-color: rgb(148, 51, 61);
+    color: black;
+}
+
+.Profile_DevalidateProductBtn:focus {
+    background-color: rgb(179, 60, 72) !important;
+    color: #000000 !important;
+    border: 1px black solid !important;
+}
+
+.Profile_ValidateProductBtn {
+    background-color: #1a531f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.Profile_ValidateProductBtn:hover {
+    background-color: #216b27;
+    color: black;
+}
+
+.Profile_ValidateProductBtn:focus {
+    background-color: #216b27 !important;
+    color: #000000 !important;
+    border: 1px black solid !important;
+}
+
+.ProfileA_HeaderObjects {
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.ProfileA_NameObject {
+    font-size: medium;
+    color: black;
+    text-decoration-line:underline;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ProfileA_NameObject:hover {
+    color: #b3404b;
+}
+
+.ProfileA_AdminHL {
+    font-size: medium;
+    color: black;
+    text-decoration-line:underline;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ProfileA_AdminHL:hover {
+    color: white;
+}
+
+
+.ProfileA_ContainerImage{
+   border-radius: 4px;
+   border: 3px solid black;
+}
+
+p{
+font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
+
+
+.btn-paginacion-color:hover {
+    color: #b3404b;
+}
+
+.btn-paginacion-color {
+    font-weight: bold;
+    color: black;
+}
+
+.btn-paginacion-color:hover {
+    background-color: #802e37;
+    border-color: #802e37;
+    color: black;
+    font-weight: bolder;
+}
+
+.page-item.active .btn-paginacion-color {
+    background-color: #b3404b;
+    border-color: #b3404b;
+    color: black;
+    font-weight: bold;
+  }
+
+  .btn:focus{
+    background-color: #802e37;
+    outline-color: #802e37;
+    border-color: #802e37;
+  }
+  .page-item.active .btn-paginacion-color {
+    background-color: #b3404b;
+    border-color: #b3404b;
+    color: black;
+    font-weight: bold;
+  }
+  button:active {
+    background-color: #c44655 !important;
+    outline-color: #c44655 !important;
+    border-color: #c44655 !important;
+  }
+
+
+  .pagination .page-link {
+    background: rgba(255, 255, 255, 0.795);
+}

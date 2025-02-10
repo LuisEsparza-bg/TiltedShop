@@ -1,0 +1,160 @@
+.ProfileS_Container,
+.ProfileS_ContainerLists {
+    background-color: rgb(235, 235, 235);
+    border-radius:1px;
+    display: flex;
+}
+
+.ProfileS_ContainerPhoto {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    border: 2px solid black;
+}
+
+
+.ProfileS_Containertext,
+.ProfileS_ContainertextSmall,
+.ProfileS_ListText,
+.ProfileS_ListTextDescription,
+.ProfileS_HeaderObjects {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    color: black;
+    padding: 1rem;
+}
+
+.ProfileS_ContainertextSmall {
+    font-size: smaller;
+}
+
+.ProfileS_ContainerLists {
+    background-color: rgb(184, 184, 184);
+    border-radius: 1px;
+
+}
+
+
+.ProfileS_ListDropdown {
+    background-color: rgb(184, 184, 184);
+    text-align: center;
+}
+
+
+.ProfileS_ListText {
+    font-size: larger;
+    font-weight: normal;
+    margin-bottom: -1.5rem;
+}
+
+.ProfileS_ItemsButton {
+    border-radius: 4px;
+    font-size: 1rem;
+    margin: 0.5rem;
+    background-color: #b3404b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.ProfileS_ItemsButton:hover {
+    background-color: #b3404b;
+    color: black;
+}
+
+.ProfileS_ItemsButton:active {
+    background-color: #97353f !important;
+    color: #000000 !important;
+    border: 1px black solid !important;
+}
+
+
+.ProfileS_HeaderObjects {
+    font-size: large;
+    color: black;
+}
+
+.ProfileS_CardObjcts {
+    background-color: rgb(255, 255, 255);
+}
+
+.ProfileS_TextObjects{
+    font-size: medium;
+    color: black;
+    text-decoration-line: none;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ProfileS_TextObjects:hover{
+    color: #b3404b;
+}
+
+.ProfileS_ViewMoreButton {
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 50%;
+    background-color: rgba(80, 78, 78, 0.8);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.ProfileS_ViewMoreButton:hover {
+    background-color: rgba(124, 122, 122, 0.8);
+    border: 1px solid black;
+}
+
+.ProfileS_ViewMoreButton:active {
+    background-color: rgba(209, 208, 208, 0.8) !important;
+}
+
+
+/* PAGINACION  
+.btn-paginacion-color:hover {
+    color: #b3404b;
+}
+
+.btn-paginacion-color {
+    font-weight: bolder;
+    color: black;
+}
+
+.btn-paginacion-color:hover {
+    background-color: #802e37;
+    border-color: #802e37;
+    color: white;
+    font-weight: bold;
+}
+
+.page-item.active .btn-paginacion-color {
+    background-color: #b3404b;
+    border-color: #b3404b;
+    color: white;
+    font-weight: bold;
+  }
+
+  .btn:focus{
+    background-color: #802e37;
+    outline-color: #802e37;
+    border-color: #802e37;
+  }
+  .page-item.active .btn-paginacion-color {
+    background-color: #b3404b;
+    border-color: #b3404b;
+    color: white;
+    font-weight: bold;
+  }
+  button:active {
+    background-color: #c44655 !important;
+    outline-color: #c44655 !important;
+    border-color: #c44655 !important;
+  }
+
+
+  
+*/

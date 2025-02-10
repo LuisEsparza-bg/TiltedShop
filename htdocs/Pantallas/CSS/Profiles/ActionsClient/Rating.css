@@ -1,0 +1,76 @@
+.fondo-color, body {
+    background-color: #4d4c4c;
+}
+
+/* Contorlar tamaño de imagenes */
+.imagenes-carrito {
+    width: 100%;
+    max-height: 100px;
+    height: auto;   
+}
+
+
+/* Input de numeros*/
+/* Estilo personalizado para el input de cantidad */
+.custom-input {
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Controla la curvatura de los bordes */
+    padding: 5px; /* Espacio interno para el número */
+    text-align: center; /* Centra el número en la caja de texto */
+}
+
+/* Elimina las flechas de incremento/decremento en el input tipo número */
+.custom-input::-webkit-inner-spin-button,
+.custom-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Estilo para evitar que el input tipo número tenga una flecha al pasar el mouse */
+.custom-input:hover::-webkit-inner-spin-button,
+.custom-input:hover::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+/* Estrellas */
+.rating {
+    font-size: 24px; /* Tamaño de las estrellas */
+    cursor: pointer;
+}
+
+/* Botones */
+/* Boton de Enviar */
+.btn-enviar {
+    background-color: #b3404b;
+    border-color: #b3404b;
+    /*width: 100%;*/
+}
+
+.btn-enviar:hover {
+    background-color: #802e37;
+    border-color: #802e37;
+    font-weight: bolder;
+}
+.btn-enviar:focus{
+/* Estilos para cuando con el tab estoy sobre un boton */
+    background-color: #802e37;
+    outline-color: #802e37;
+    border-color: #802e37;
+}
+.btn-enviar:active {
+/* Estilos para el estado activo (clic) del botón */
+    background-color: #c44655 !important;
+    outline-color: #c44655 !important;
+    border-color: #c44655 !important;
+}
+.btn-enviar i {
+    color: white !important;
+}  
+
+
+/* Linea de separacion entre productos*/
+.linea-separacion {
+    border: none; /* Elimina el borde predeterminado */
+    border-top: 2px solid black; /* Agrega un borde superior de 1 píxel de grosor en color gris */  
+}

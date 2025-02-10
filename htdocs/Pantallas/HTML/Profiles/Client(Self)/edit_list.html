@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../Librerias/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../CSS/Profiles/ActionsClient/edit_list.css">
+    <link rel="stylesheet" href="../../../CSS/General Styles/navbar.css">
+    <link rel="stylesheet" href="../../../CSS/General Styles/background.css">
+</head>
+
+<body class="">
+
+    <!-- NAVBAR START -->
+    <div class="row Navbar_Container">
+        <div class="col-lg-3 col-sm-4">
+            <a href="../../../HTML/Profiles/Home.html"><img src="../../../Images/Tilted_Shop_Logo.png"
+                    class="Navbar_Logo" alt="Tilted Shop Icon"></a>
+
+        </div>
+
+        <div class="col-lg-6 col-sm-4 ">
+            <div class="container Navbar_SearchBar">
+                <div class="input-group">
+                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                        aria-describedby="search-addon" />
+                    <a href="../../../HTML/Profiles/Search_Result.html"
+                        class="btn btn-primary Navbar_SearchButton">Buscar</a>
+                    <div class="mt-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-1 col-sm-4">
+            <div class="dropdown">
+                <a class="btn dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                    <small> Hola <b> @Usuario </b> </small>
+                    <br>
+                    <b>Cuenta y Más </b>
+                </a>
+
+                <ul class="dropdown-menu Navbar_DropdownMenu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Client(Self)/Profile_ClientS.html">Mi Perfil</a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Client(Self)/my_orders.html">Mis pedidos</a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Client(Self)/Messages_Client.html">Mis mensajes</a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton" href="../../General/index.html">Cerrar sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="col-lg-2 col-sm-4">
+            <a href="../../../HTML/Profiles/Client(Self)/Shopping_Cart.html">
+                <img src="../../../Images/Edit_Profile_Images/Car_icon.jpg" class="Navbar_CarLogo" alt="Cart icon">
+            </a>
+            <div class="Navbar_CarText">
+                <a class="Navbar_CartHL" href="../../../HTML/Profiles/Client(Self)/Shopping_Cart.html"> Mi Carrito </a>
+            </div>
+        </div>
+    </div>
+    <!-- NAVBAR END -->
+
+    <div class="container mt-3 mb-3 List_Container p-0">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <h2 class="">Editar @Nombre De Lista</h2>
+                <hr>
+
+
+                <h5 class="form-label mt-3 List_Text">Imagenes de la Lista:</h5>
+                <div class="row">
+                    <div class="col-lg-2 mb-3">
+                        <div class="position-relative">
+                            <img src="../../../Images/Items_Images/cotizado9.png" alt="" class="img-fluid List_ImageStyle">
+                            <button class="btn List_DeleteImageButton">Eliminar</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 mb-3">
+                        <div class="position-relative">
+                            <img src="../../../Images/Items_Images/cotizado10.png" alt="" class="img-fluid List_ImageStyle">
+                            <button class="btn List_DeleteImageButton">Eliminar</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 mb-3">
+                        <div class="position-relative">
+                            <img src="../../../Images/Items_Images/cotizado5.png" alt="" class="img-fluid List_ImageStyle">
+                            <button class="btn List_DeleteImageButton">Eliminar</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 mb-3">
+                        <div class="position-relative">
+                            <img src="../../../Images/Items_Images/cotizado3.png" alt="" class="img-fluid List_ImageStyle">
+                            <button class="btn List_DeleteImageButton">Eliminar</button>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-2 mb-3">
+                        <div class="position-relative">
+                            <img src="../../../Images/Items_Images/cotizado6.png" alt="" class="img-fluid List_ImageStyle">
+                            <button class="btn List_DeleteImageButton">Eliminar</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 mb-3">
+                        <div class="position-relative">
+                            <img src="../../../Images/Items_Images/mcotizado4.png" alt="" class="img-fluid List_ImageStyle">
+                            <button class="btn List_DeleteImageButton">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="listImage" class="form-label List_Text">Cargar Nueva Imagen</label>
+                    <input type="file" class="form-control">
+                </div>
+
+                
+
+                <form id="form1">
+                    <div class="mb-3">
+                        <label class="form-label List_Text">Nombre de la Lista:</label>
+                        <input type="text" class="form-control" required placeholder="Mi Lista de Videojuegos">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="listDescription" class="form-label List_Text">Descripción de la Lista:</label>
+                        <textarea class="form-control" rows="4" required placeholder="Hola esta es mi Lista"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label List_Text">Privacidad de la Lista:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio"
+                                value="public" checked required>
+                            <label class="form-check-label" for="publicList" active>Pública</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio"
+                                value="private" required>
+                            <label class="form-check-label" for="privateList">Privada</label>
+                        </div>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn List_EditButton mb-3">Guardar Cambios</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="../../../JS/login.js"></script>
+    <script src="../../../Librerias/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../../Librerias/popper/popper.min.js"></script>
+    <script src="../../../Librerias/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="../../../JS/Client/List.js"></script>
+</body>
+
+
+</html>

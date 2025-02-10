@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../../Librerias/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    
+    <!-- CSS para la Nav Bar-->
+    <link rel="stylesheet" href="../../../CSS/Profiles/ActionsClient/my_orders.css">
+    <link rel="stylesheet" href="../../../CSS/Profiles/ActionsSeller/profile_SellerReports.css">
+    <link rel="stylesheet" href="../../../CSS/General Styles/navbar.css">
+    <link rel="stylesheet" href="../../../CSS/General Styles/footer.css">
+    <link rel="stylesheet" href="../../../CSS/General Styles/background.css">
+    <link rel="stylesheet" href="../../../CSS/General Styles/Pagination.css">
+    <link rel="stylesheet" href="../../../CSS/General Styles/background.css">
+
+</head>
+<body>
+    
+      <!-- Nav bar -->
+      <div class="row Navbar_Container">
+        <div class="col-lg-3 col-sm-4">
+            <a href="../../../HTML/Profiles/Home.html"><img src="../../../Images/Tilted_Shop_Logo.png"
+                    class="Navbar_Logo" alt="Tilted Shop Icon"></a>
+
+        </div>
+
+        <div class="col-lg-6 col-sm-4 ">
+            <div class="container Navbar_SearchBar">
+                <div class="input-group">
+                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                        aria-describedby="search-addon" />
+                    <a href="../../../HTML/Profiles/Search_Result.html"
+                        class="btn btn-primary Navbar_SearchButton">Buscar</a>
+                    <div class="mt-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-1 col-sm-4">
+            <div class="dropdown">
+                <a class="btn dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                    <small> Hola <b> @Usuario </b> </small>
+                    <br>
+                    <b>Cuenta y Más </b>
+                </a>
+
+                <ul class="dropdown-menu Navbar_DropdownMenu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Client(Self)/Profile_ClientS.html">Mi Perfil</a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Client(Self)/my_orders.html">Mis pedidos</a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Client(Self)/Messages_Client.html">Mis mensajes</a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton" href="../../General/index.html">Cerrar sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="col-lg-2 col-sm-4">
+            <a href="../../../HTML/Profiles/Client(Self)/Shopping_Cart.html">
+                <img src="../../../Images/Edit_Profile_Images/Car_icon.jpg" class="Navbar_CarLogo" alt="Cart icon">
+            </a>
+            <div class="Navbar_CarText">
+                <a class="Navbar_CartHL" href="../../../HTML/Profiles/Client(Self)/Shopping_Cart.html"> Mi Carrito </a>
+            </div>
+        </div>
+    </div>
+    <!-- Nav bar end-->
+
+    <!-- sidebar y content -->
+     <section class="pt-4"> <!-- Este margin es para separar el navbar del contenido-->
+        <div class="container">
+            
+            <div class="row">
+
+                <!-- Begin sidebar -->
+                <div class="col-lg-3 col-sm-4 ">  <!-- Agrege el col sm 4 para que al hacer pequeña la pantalla tenga 4 espacios de col y el content tenga 8-->
+                
+                    <!-- Collapsible wrapper -->
+                    <div class="card d-block mb-5" id="navbarSupportedContent"> <!-- Si quiero que el boton de arriba funcione a posterior necesito que esta barra se colapse con collapse y borre el d-lg-block que fuerza el bloque en pantallas lg para que el collpase entre en accion en sm y md-->
+                        
+                        <div class="card-header mb-4 card-Primer-Titulo"> 
+                        Filtros
+                        </div>
+
+                        <div class="card-body m-0 p-0">
+                            <!-- Esto no es necesario par aque se mueste la card completa en el card padre
+                            <div class="row">
+                                <div class="container-fluid">
+                                -->
+
+                                <!-- Filtro de Fechas -->
+                                <div class="card mb-3">
+                                    <!-- Encabezado de filtro -->
+                                    <div class="card-header card-titulo">
+                                    Rango de Fechas
+                                    </div>
+
+                                    <!-- Cuerpo del filtro -->
+                                    <div class="card-body">
+                                    
+                                        <!-- Checked checkbox -->
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Activar_Rango" />
+                                            <label class="form-check-label" for="Activar_Rango">Activar</label>                            
+                                        </div>
+                                        <!-- Inputs de fechas -->
+                                        <div class="form-group mt-3">
+                                            <label for="fechaInicial">Fecha inicial:</label>
+                                            <input type="date" class="form-control" id="fechaInicial" name="fechaInicial">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="fechaFinal">Fecha final:</label>
+                                            <input type="date" class="form-control" id="fechaFinal" name="fechaFinal">
+                                        </div>
+
+                                    </div>
+                                    <!-- End Cuerpo-->
+
+                                </div>
+
+                                <!--- 
+                                </div>
+                            </div>
+                            -->
+
+                            <!-- Filtro de categorias -->
+                            <div class="card mb-3">
+                                <!-- Encabezado de filtro -->
+                                    <div class="card-header card-titulo">
+                                    Categorías
+                                    </div>
+                                <!-- Cuerpo del filtro -->
+                                <div class="card-body">
+
+                                    <!-- Botones de radio -->
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="filtroCategoria" id="ningunaCategoria" value="ninguna" checked>
+                                        <label class="form-check-label" for="ningunaCategoria">
+                                            Ninguna categoría
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="filtroCategoria" id="unaCategoria" value="una">
+                                        <label class="form-check-label" for="unaCategoria">
+                                            1 sola categoría
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="filtroCategoria" id="todasCategorias" value="todas">
+                                        <label class="form-check-label" for="todasCategorias">
+                                            Todas las categorías
+                                        </label>
+                                    </div>
+                                    <!-- Combobox de categorías -->
+                                    <div class="form-group mt-3">
+                                        <label for="seleccionarCategoria">Seleccionar categoría:</label>
+                                        <select class="form-select" id="seleccionarCategoria" name="seleccionarCategoria">
+                                            <!-- Aquí debes incluir las opciones de categorías -->
+                                            <option value="categoria1">Electronica</option>
+                                            <option value="categoria2">Automovilismo</option>
+                                            <option value="categoria3">Hogar</option>
+                                            <!-- Agrega más opciones de categorías según sea necesario -->
+                                        </select>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                            <!--Filtro de busqueda -->
+                           
+
+                            <button class="btn btn-primary shadow-0 btn-detalles mb-3 d-flex align-item-center justify-content-center mx-auto" type="button">Filtrar</button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- End sidebar -->
+
+
+
+
+                <!-- Content -->
+                <div class="col-lg-9 col-sm-8"> <!-- Aqui agrege el sm-8 para que funcione con la columna de filtros-->
+                    
+                    <!-- Contenedor para Consultas -->
+                    <div class="container-fluid PayProductsContainer">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <h3 class="">Mis pedidos:</h3>
+                            </div>
+                            <!-- Agregar la barra de búsqueda a la derecha -->
+                            <div class="col-lg-4 mt-3">
+                                
+                            </div>
+                        </div>
+        
+                        <div class="row MyOrders_InfoOrder mb-3">
+                            <div class="col-lg-3">
+                                <p class="MyOrder_Text"> Pedido realizado: <b>20 de Noviembre de 2022, 10:02 </b></p>
+                            </div>
+        
+                            <div class="col-lg-3">
+                                <p class="MyOrder_Text"> Total: <b>3,345.00$</b></p>
+                            </div>
+
+
+        
+        
+                            <div class="col-lg-3">
+                                <p class="MyOrder_Text"> Enviado a: <b>@Domicilio</b></p>
+                            </div>
+        
+                            <div class="col-lg-3">
+                                <p class="MyOrder_Text"> Pedido n# <b>3048501</b></p>
+                            </div>
+        
+                        </div>
+        
+                        <div class="MyOrder_ContainerProducts p-0">
+        
+                            <div class="row">
+                                <div class="container-fluid col-lg-4 MyOrder_ContainerImages mt-3">
+                                    <img src="../../../Images/Items_Images/Figura4.png" alt=""
+                                        class="img-fluid MyOrder_Images align-middle">
+                                </div>
+                                <div class="container-fluid col-lg-8">
+                                    <h5><a class="MyOrder_Product" href="../../../HTML/Profiles/Products_Detail.html">Figura Anime Super</a></h5>
+                                    <p>Precio del producto: <b>199.99$</b> </p>
+                                    <p>Categorías: <b>Anime, Figuras</b> </p>
+                                    <p>Calificación: <b>3✰</b> </p>
+                                    <p>Vendido por: <a class="MyOrder_SellerText" href="../../../HTML/Profiles/Profile_Seller.html">@Usuario</a></p>
+                                </div>
+                            </div>
+        
+                            <hr>
+        
+                            <div class="row">
+                                <div class="container-fluid col-lg-4 MyOrder_ContainerImages">
+                                    <img src="../../../Images/Items_Images/Figura3.png" alt=""
+                                        class="img-fluid MyOrder_Images align-middle">
+                                </div>
+                                <div class="container-fluid col-lg-8">
+                                    <h5><a class="MyOrder_Product" href="../../../HTML/Profiles/Products_Detail.html">Figura Anime</a></h5>
+                                    <p>Precio del producto: <b>399.99$</b> </p>
+                                    <p>Categorías: <b>Anime, Figuras</b> </p>
+                                    <p>Calificación: <b>1✰</b> </p>
+                                    <p>Vendido por: <a class="MyOrder_SellerText" href="../../../HTML/Profiles/Profile_Seller.html">@Usuario</a></p>
+                                </div>
+                            </div>
+        
+                            <hr>
+        
+                            <div class="row">
+                                <div class="container-fluid col-lg-4 MyOrder_ContainerImages">
+                                    <img src="../../../Images/Items_Images/game5.png" alt=""
+                                        class="img-fluid MyOrder_Images align-middle">
+                                </div>
+                                <div class="container-fluid col-lg-8">
+                                    <h5><a class="MyOrder_Product" href="../../../HTML/Profiles/Products_Detail.html">Videojuego</a></h5>
+                                    <p>Precio del producto: <b>1,399.99$</b> </p>
+                                    <p>Categorías: <b>Anime, Videojuegos</b> </p>
+                                    <p>Calificación: <b>2✰</b> </p>
+                                    <p>Vendido por: <a class="MyOrder_SellerText" href="../../../HTML/Profiles/Profile_Seller.html">@Usuario</a></p>
+                                </div>
+                            </div>
+        
+                            <hr>
+        
+                        </div>
+        
+        
+                        <div class="row MyOrders_InfoOrderFinish mb-3">
+                            <div class="col-lg-3">
+                                <p class="MyOrder_Text"> Gracias por tu pedido <b> :D </b></p>
+                            </div>
+                        </div>
+        
+                        <hr>
+        
+                        <div class="row MyOrders_InfoOrder mb-3">
+                            <div class="col-lg-3">
+                                <p class="MyOrder_Text"> Pedido realizado: <b>04 de Noviembre de 2022, 10:02</b></p>
+                            </div>
+        
+                            <div class="col-lg-3">
+                                <p class="MyOrder_Text"> Total: <b>2,345.00$</b></p>
+                            </div>
+        
+                            <div class="col-lg-3">
+                                <p class="MyOrder_Text"> Enviado a: <b>@Domicilio</b></p>
+                            </div>
+        
+                            <div class="col-lg-3">
+                                <p class="MyOrder_Text"> Pedido n# <b>3142513</b></p>
+                            </div>
+        
+                        </div>
+        
+                        <div class="MyOrder_ContainerProducts p-0">
+        
+                            <div class="row">
+                                <div class="container-fluid col-lg-4 MyOrder_ContainerImages mt-3">
+                                    <img src="../../../Images/Items_Images/mcotizado4.png" alt=""
+                                        class="img-fluid MyOrder_Images align-middle">
+                                </div>
+                                <div class="container-fluid col-lg-8">
+                                    <h5><a class="MyOrder_Product" href="../../../HTML/Profiles/Products_Detail.html">Mesa de Madera Caoba</a></h5>
+                                    <p>Precio del producto: <b>1,199.99$</b> </p>
+                                    <p><b>Este producto fue cotizado</b> </p>
+                                    <p>Categorías: <b>Mesas, Madera</b> </p>
+                                    <p>Mesa de Caoba con toques modernos y el nombre "Lisa" enmarcado en Oro, 100cm de ancho y
+                                        400cm de altura</p>
+                                        <p>Calificación: <b>5✰</b> </p>
+                                    <p>Vendido por: <a class="MyOrder_SellerText" href="../../../HTML/Profiles/Profile_Seller.html">@Usuario</a></p>
+                                </div>
+                            </div>
+        
+                            <hr>
+        
+                            <div class="row">
+                                <div class="container-fluid col-lg-4 MyOrder_ContainerImages">
+                                    <img src="../../../Images/Items_Images/Figura1.png" alt=""
+                                        class="img-fluid MyOrder_Images align-middle">
+                                </div>
+                                <div class="container-fluid col-lg-8">
+                                    <h5><a class="MyOrder_Product" href="../../../HTML/Profiles/Products_Detail.html">Figura Anime</a></h5>
+                                    <p>Precio del producto: <b>459.99$</b> </p>
+                                    <p>Categorías: <b>Figuras, Anime</b> </p>
+                                    <p>Calificación: <b>5✰</b> </p>
+                                    <p>Vendido por: <a class="MyOrder_SellerText" href="../../../HTML/Profiles/Profile_Seller.html">@Usuario</a></p>
+                                </div>
+                            </div>
+        
+                            <hr>
+        
+                            <hr>
+        
+                        </div>
+        
+                        <div class="row MyOrders_InfoOrderFinish mb-3">
+                            <div class="col-lg-3">
+                                <p class="MyOrder_Text"> Gracias por tu pedido <b> :D </b></p>
+                            </div>
+                        </div>
+        
+                        <hr>
+        
+                        <div class="row MyOrders_InfoOrder mb-3">
+                            <div class="col-lg-3">
+                                <p class="MyOrder_Text"> Pedido realizado: <b>26 de Noviembre de 2021 14:00</b></p>
+                            </div>
+        
+                            <div class="col-lg-3">
+                                <p class="MyOrder_Text"> Total: <b>1,199.00$</b></p>
+                            </div>
+        
+                            <div class="col-lg-3">
+                                <p class="MyOrder_Text"> Enviado a: <b>@Domicilio</b></p>
+                            </div>
+        
+                            <div class="col-lg-3">
+                                <p class="MyOrder_Text"> Pedido n# <b>31203</b></p>
+                            </div>
+        
+                        </div>
+        
+                        <div class="MyOrder_ContainerProducts p-0">
+        
+                            <div class="row">
+                                <div class="container-fluid col-lg-4 MyOrder_ContainerImages mt-3">
+                                    <img src="../../../Images/Items_Images/mcotizado4.png" alt=""
+                                        class="img-fluid MyOrder_Images align-middle">
+                                </div>
+                                <div class="container-fluid col-lg-8">
+                                    <h5><a class="MyOrder_Product" href="../../../HTML/Profiles/Products_Detail.html">Mesa de Madera Caoba</a></h5>
+                                    <p>Precio del producto: <b>1,199.99$</b> </p>
+                                    <p>Categorías: <b>Mesas, Madera</b> </p>
+                                    <p><b>Este producto fue regalado a @Usuario</b> </p>
+                                    <p>Calificación: <b>5✰</b> </p>
+                                    <p>Vendido por: <a class="MyOrder_SellerText" href="../../../HTML/Profiles/Profile_Seller.html">@Usuario</a></p>
+                                </div>
+                            </div>
+        
+                            <hr>
+        
+                        </div>
+        
+                        <div class="row MyOrders_InfoOrderFinish mb-3">
+                            <div class="col-lg-3">
+                                <p class="MyOrder_Text"> Gracias por tu pedido <b> :D </b></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="../../../Librerias/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../../Librerias/popper/popper.min.js"></script>
+    <script src="../../../Librerias/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="../../../JS/Seller/Creacion_Nuevo_Producto.js"></script>
+    
+</body>
+</html>

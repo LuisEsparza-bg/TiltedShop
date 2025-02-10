@@ -1,0 +1,44 @@
+.btn-paginacion-color:hover {
+    color: #b3404b;
+}
+
+.btn-paginacion-color {
+    font-weight: bold;
+    color: black;
+}
+
+.btn-paginacion-color:hover {
+    background-color: #802e37;
+    border-color: #802e37;
+    color: black;
+    font-weight: bolder;
+}
+
+.page-item.active .btn-paginacion-color {
+    background-color: #b3404b;
+    border-color: #b3404b;
+    color: black;
+    font-weight: bold;
+  }
+
+  .btn:focus{
+    background-color: #802e37;
+    outline-color: #802e37;
+    border-color: #802e37;
+  }
+  .page-item.active .btn-paginacion-color {
+    background-color: #b3404b;
+    border-color: #b3404b;
+    color: black;
+    font-weight: bold;
+  }
+  button:active {
+    background-color: #c44655 !important;
+    outline-color: #c44655 !important;
+    border-color: #c44655 !important;
+  }
+
+
+  .pagination .page-link {
+    background: rgba(255, 255, 255, 0.795);
+}

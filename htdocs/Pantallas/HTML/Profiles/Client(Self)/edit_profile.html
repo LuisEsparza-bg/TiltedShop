@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../Librerias/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../CSS/Profiles/ActionsClient/edit_profile.css">
+    <link rel="stylesheet" href="../../../CSS/General Styles/navbar.css">
+    <link rel="stylesheet" href="../../../CSS/General Styles/footer.css">
+    <link rel="stylesheet" href="../../../CSS/General Styles/background.css">
+</head>
+
+<body>
+
+    <div class="row Navbar_Container">
+        <div class="col-lg-3 col-sm-4">
+            <a href="../../../HTML/Profiles/Home.html"><img src="../../../Images/Tilted_Shop_Logo.png"
+                    class="Navbar_Logo" alt="Tilted Shop Icon"></a>
+
+        </div>
+
+        <div class="col-lg-6 col-sm-4 ">
+            <div class="container Navbar_SearchBar">
+                <div class="input-group">
+                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                        aria-describedby="search-addon" />
+                    <a href="../../../HTML/Profiles/Search_Result.html"
+                        class="btn btn-primary Navbar_SearchButton">Buscar</a>
+                    <div class="mt-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-1 col-sm-4">
+            <div class="dropdown">
+                <a class="btn dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                    <small> Hola <b> @Usuario </b> </small>
+                    <br>
+                    <b>Cuenta y Más </b>
+                </a>
+
+                <ul class="dropdown-menu Navbar_DropdownMenu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Client(Self)/Profile_ClientS.html">Mi Perfil</a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Client(Self)/my_orders.html">Mis pedidos</a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Client(Self)/Messages_Client.html">Mis mensajes</a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton" href="../../General/index.html">Cerrar sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="col-lg-2 col-sm-4">
+            <a href="../../../HTML/Profiles/Client(Self)/Shopping_Cart.html">
+                <img src="../../../Images/Edit_Profile_Images/Car_icon.jpg" class="Navbar_CarLogo" alt="Cart icon">
+            </a>
+            <div class="Navbar_CarText">
+                <a class="Navbar_CartHL" href="../../../HTML/Profiles/Client(Self)/Shopping_Cart.html"> Mi Carrito </a>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+
+
+    <div class="row">
+
+        <div class="col-lg-1 col-sm-4"> </div>
+        <div class="col-lg-10">
+            <h1>Editar Perfil</h1>
+            <hr>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-lg-1 col-sm-4"> </div>
+
+
+
+        <div class="col-lg-5">
+            <div class="container EditProfile_EditPhotoDataContainer">
+
+                <div class="container justify-content-center mt-3 text-center">
+                    <img class="EditProfile_ProfilePhoto" src="../../../Images/Edit_Profile_Images/Profile_Photo.jpg"
+                        alt="Profile_Image">
+                </div>
+
+                <form id="form1">
+                    <div class="form-group mt-3">
+                        <label for="archivo">Selecciona una foto nueva</label>
+                        <input type="file" class="form-control-file" id="archivo" required>
+
+                        <button id="Login_Submit" type="submit" class="btn EditProfile_SubmitButtonEdit">Enviar</button>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="col-lg-5">
+            <div class="container EditProfile_EditDataContainer">
+
+
+                <form id="form2">
+                    <div class="form-group">
+
+                        <label class="Login_Labels">Nombre de Usuario:</label>
+                        <input type="text" class="form-control Login_Inputs" id="Edit_Username" placeholder="Contraseña"
+                            value="Renegul" required>
+
+                        <label class="Login_Labels">Contraseña:</label>
+                        <input type="password" class="form-control Login_Inputs" id="Edit_Name" required
+                            value="************">
+
+                        <label class="Login_Labels">Nombre:</label>
+                        <input type="text" class="form-control Login_Inputs" id="Edit_Name" required
+                            value="Luis Angel Missael">
+
+                        <label class="Login_Labels">Fecha de Nacimiento:</label>
+                        <input type="date" class="form-control Login_Inputs" id="Edit_Birthday" required>
+
+                        <label class="Login_Labels">Correo Electronico:</label>
+                        <input type="email" class="form-control Login_Inputs" id="Edit_Email" required
+                            value="luisangel@gmail.com">
+
+                        <label>Género:</label>
+                        <select class="form-control " required>
+                            <option value="opcion1">Hombre</option>
+                            <option value="opcion2">Mujer</option>
+                            <option value="opcion3">No binario</option>
+                        </select>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Perfil Público
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Perfil Privado
+                            </label>
+                          </div>
+
+                        <button id="Login_Submit" type="submit" class="btn EditProfile_SubmitButtonEdit">Enviar</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+
+        
+
+
+
+    </div>
+
+
+    <script src="../../../Librerias/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../../Librerias/popper/popper.min.js"></script>
+    <script src="../../../Librerias/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="../../../JS/Client/Profile_Edit.js"></script>
+
+</body>
+
+
+<div class="FooterStyle">
+    <span class="FooterText"> Copyright © 2023 - All rights reserved || Designed By: Luis & Max. </span>
+
+</div>
+
+</html>

@@ -1,0 +1,91 @@
+.MyOrders_InfoOrder{
+    background-color:rgba(255, 255, 255, 0.795);
+    border-radius: 3px;
+    border-bottom: 2px solid rgb(80, 79, 79);
+    border-top: 2px solid rgb(80, 79, 79);
+}
+
+
+.MyOrders_InfoOrderFinish{
+    background-color:#b3404b;
+    border-radius: 3px;
+    border-top: 2px solid rgb(80, 79, 79);
+    border-bottom: 2px solid rgb(80, 79, 79);
+}
+
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: black;
+    padding: 1rem;
+}
+
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.MyOrder_Text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+    color: black;
+}
+
+.MyOrder_Product {
+    font-size: medium;
+    color: black;
+    text-decoration-line:underline;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.MyOrder_Product:hover {
+    color: #b3404b;
+}
+
+
+.MyOrder_SellerText{
+    color: black;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    text-decoration-line: none;
+}
+
+.MyOrder_SellerText:hover {
+    color: #ffffff;
+    text-decoration-line: underline;
+}
+
+
+
+.MyOrder_ContainerImages{
+    width: 10%;
+    height: 10%;
+}
+
+.MyOrder_ContainerProducts{
+    background-color: rgb(192, 191, 191);
+}
+
+.MyOrder_Images{
+    border-radius: 4px;
+    border: 3px solid black;
+ }
+
+
+ .MyOrder_OrdersContainer{
+    background-color: rgb(235, 235, 235);
+    border-radius: 1px;
+    display: flex;
+}
+
+.form-control:focus {
+    border-color: #b3404b;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+  }
+
+
+.PayProductsContainer{
+    background-color: white;
+}

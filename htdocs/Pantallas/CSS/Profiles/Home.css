@@ -1,0 +1,47 @@
+
+/* Aplicar un tamaño máximo a las imágenes en el carrusel */
+.carousel-inner img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Recorta las imagenes si no encajan con los tamaños marcados */
+    height: 700px;
+}
+
+body{
+    background-color: #4d4c4c;
+    
+}
+
+.color-carrusel{
+    background-color: rgb(197, 197, 197);
+    
+}
+
+.info-banner{
+    background-color: rgb(197, 197, 197);
+    
+}
+
+.equal-image {
+    /* width: 100%; */ /* Establece el ancho al 100% para que las imágenes se ajusten al contenedor. */
+    /* height: auto; */ /* Mantén la proporción original de la imagen. */
+    width: auto; /* Con auto funciona pero no estan centradas las imagenes  con 100 se centra la imagen pero porque se estira apartir de ahi*/
+    height: 300px; /* Se establece el limite unico, con auto funciona muy bien para el width*/
+    /* Como hay un limite de 300 este maximo no funciona*/
+    max-height: 300px; /* Establece el alto maximo con esto no de estiran las imagenes al achicar la pantalla porque permite que se achiquen a menos de 300*/
+    
+}
+
+.equal-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente si lo deseas */
+    height: 300px; /* Establece la altura del contenedor */
+}
+
+.titulos-menu {
+    color: white;
+}
+.parrafos-menu {
+    color: white;
+}

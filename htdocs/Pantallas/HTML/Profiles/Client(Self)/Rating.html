@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../../Librerias/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    
+    <!-- CSS para la Nav Bar-->
+    <link rel="stylesheet" href="../../../CSS/General Styles/navbar.css">
+    <link rel="stylesheet" href="../../../CSS/Profiles/ActionsClient/Rating.css">
+
+</head>
+<body>
+    
+      <!-- Nav bar -->
+      <div class="row Navbar_Container">
+        <div class="col-lg-3 col-sm-4">
+            <a href="../../../HTML/Profiles/Home.html"><img src="../../../Images/Tilted_Shop_Logo.png"
+                    class="Navbar_Logo" alt="Tilted Shop Icon"></a>
+
+        </div>
+
+        <div class="col-lg-6 col-sm-4 ">
+            <div class="container Navbar_SearchBar">
+                <div class="input-group">
+                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                        aria-describedby="search-addon" />
+                    <a href="../../../HTML/Profiles/Search_Result.html"
+                        class="btn btn-primary Navbar_SearchButton">Buscar</a>
+                    <div class="mt-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-1 col-sm-4">
+            <div class="dropdown">
+                <a class="btn dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                    <small> Hola <b> @Usuario </b> </small>
+                    <br>
+                    <b>Cuenta y Más </b>
+                </a>
+
+                <ul class="dropdown-menu Navbar_DropdownMenu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Client(Self)/Profile_ClientS.html">Mi Perfil</a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Client(Self)/my_orders.html">Mis pedidos</a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Client(Self)/Messages_Client.html">Mis mensajes</a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton" href="../../General/index.html">Cerrar sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="col-lg-2 col-sm-4">
+            <a href="../../../HTML/Profiles/Client(Self)/Shopping_Cart.html">
+                <img src="../../../Images/Edit_Profile_Images/Car_icon.jpg" class="Navbar_CarLogo" alt="Cart icon">
+            </a>
+            <div class="Navbar_CarText">
+                <a class="Navbar_CartHL" href="../../../HTML/Profiles/Client(Self)/Shopping_Cart.html"> Mi Carrito </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nav bar end-->
+
+    <!-- Valoraciones -->
+    <section class="py-5 fondo-color"> <!-- Cambie margin por padding para poder pintar el fondo-->
+      <div class="container">
+        <div class="row ">
+
+            <!-- Card -->
+            <div class="col-lg-12 col-sm-12">
+                <div class="card border shadow-0">
+                
+                    <div class="m-4">
+                        <!-- Header de la card-->
+                        <h2 class="card-title mb-4">Valoración</h2>
+                        
+                        <!-- Linea de separacion del header y el body-->
+                        <hr class="mb-4 linea-separacion">
+                        
+                            <!-- Body de la card-->
+                            <!-- Datos del producto -->
+                            <div class="card-body p-0"> 
+                            <div class="row gy-3 mb-4 "> <!-- Checar para que funciona el gy-3 -->
+
+                                <!-- Imagen-->
+                                <div class="col-xl-4  col-lg-4 col-md-12  d-flex justify-content-center"> <!-- TODO: Modificar los tamaños de columnas md, lg y sm-->
+                                    <div class="bg-image rounded me-md-3 mb-3 mb-md-0"> <!-- A posterior usar la clase hover-zoom, ripple y ripple-surface-->
+                                    <img src="../../../Images/Items_Images/game5.png" class="imagenes-carrito" />
+                                    </div>
+                                </div>
+
+                                <!-- Nombres -->
+                                <div class="col-xl-4 col-lg-4 col-sm-12 text-center pe-3"> 
+                                    <!-- Nombre del producto -->
+                                    <a href="#" class="nav-link">Juego para PS4 CyberWaifu 2088</a> <!-- Nav link sirve para que un texto funcione como link sin lucir como uno-->
+                                    <!-- Nombre del vendedor -->
+                                    <p class="text-muted">@Nombre de Vendedor</p>
+                                </div>
+                                
+                                <!-- Input de cantidad y texto-->
+                                <div class="col-xl-4 col-lg-4 col-sm-12 col-md-12 d-flex flex-row text-nowrap justify-content-sm-center">
+                                    <div class="align-item-center justify-content-center">
+                                        <p class="mb-0"> Cantidad: </p>
+                                        <input type="number" class="form-control custom-input" min="1" value="1" readonly>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <hr class="mb-4 linea-separacion">
+
+                            <form id="form1">
+                                <div class="row mb-4">
+                                    <!-- Puntuacion estrellas -->
+                                    <div class="container mt-0">
+                                        <h3>Califica este producto:</h3>
+                                        <div class="rating">
+                                            <span class="star" data-rating="1"><i class="fa fa-star"></i></span>
+                                            <span class="star" data-rating="2"><i class="fa fa-star"></i></span>
+                                            <span class="star" data-rating="3"><i class="fa fa-star"></i></span>
+                                            <span class="star" data-rating="4"><i class="fa fa-star"></i></span>
+                                            <span class="star" data-rating="5"><i class="fa fa-star"></i></span>
+                                        </div>
+                                        <p class="mt-2">Tu calificación: <span id="rating-value">0</span></p>
+                                    </div>
+                                </div>
+
+                                <hr class="mb-4 linea-separacion">
+
+                                <div class="row mb-4"> 
+                                    <!-- Reseñas de texto -->
+                                    <h3>Deja tu reseña</h3>
+                                    
+                                    <!-- Espacio para escribir la reseña -->
+                                    <div class="form-group">
+                                        <label for="reseña" class="mb-2"> Agradeceríamos su apoyo dejando una reseña sobre el producto adquirido, para futuros compradores.</label>
+                                        <textarea id="reseña" name="reseña" class="form-control" rows="5" placeholder="Escribe tu reseña aquí..." required></textarea>
+                                    </div>
+                                </div>
+
+                                <!-- Botón para enviar la reseña -->
+                                <div class="d-flex align-item-center justify-content-center"> 
+                                    <button type="submit" class="btn btn-primary btn-enviar">Enviar Valoración</button>
+                                </div>
+
+                            </form>
+
+                        </div>
+                    
+                    </div>             
+                </div>
+             </div>
+             <!-- End Card -->
+          
+        </div>
+      </div>
+    </section>
+    
+    <script src="../../../Librerias/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../../Librerias/popper/popper.min.js"></script>
+    <script src="../../../Librerias/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="../../../JS/Client/Valoracion.js"></script>
+    <script src="../../../JS/Client/Rating.js"></script>
+
+    
+</body>
+</html>

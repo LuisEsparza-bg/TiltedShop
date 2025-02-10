@@ -1,0 +1,95 @@
+.fondo-color, body {
+    background-color: #4d4c4c;
+}
+
+.fondo-card {
+    background-color: rgb(179, 179, 179);
+}
+
+/* Botones */
+/* Boton de Comprar*/
+.btn-comprar {
+    background-color: #b3404b;
+    border-color: #b3404b;
+    width: 100%;
+}
+
+.btn-comprar:hover {
+    background-color: #802e37;
+    border-color: #802e37;
+    font-weight: bolder;
+}
+.btn-comprar:focus{
+/* Estilos para cuando con el tab estoy sobre un boton */
+    background-color: #802e37;
+    outline-color: #802e37;
+    border-color: #802e37;
+}
+.btn-comprar:active {
+/* Estilos para el estado activo (clic) del botón */
+    background-color: #c44655 !important;
+    outline-color: #c44655 !important;
+    border-color: #c44655 !important;
+}
+.btn-comprar i {
+    color: white !important;
+}  
+
+
+/* Botones genericos*/
+.btn-generico {
+    background-color: #b3404b;
+    border-color: #b3404b;
+    
+}
+
+.btn-generico:hover {
+    background-color: #802e37;
+    border-color: #802e37;
+    font-weight: bolder;
+}
+.btn-generico:focus{
+/* Estilos para cuando con el tab estoy sobre un boton */
+    background-color: #802e37;
+    outline-color: #802e37;
+    border-color: #802e37;
+}
+.btn-generico:active {
+/* Estilos para el estado activo (clic) del botón */
+    background-color: #c44655 !important;
+    outline-color: #c44655 !important;
+    border-color: #c44655 !important;
+}
+.btn-generico i {
+    color: white !important;
+}  
+
+
+
+
+.carrusel-Producto-Vista {
+    background-color: #4d4c4c;
+}
+
+
+/* Iconos de corazon */
+.icon-hover:hover {
+    border-color: #b3404b !important;
+    background-color: white !important;
+  }
+  
+.icon-hover:hover i {
+  color:#b3404b !important;
+}
+
+.cuadro-categorias {
+    border: 1px solid #a3a3a3;
+    border-radius: 10px;
+    background-color: rgb(241, 241, 241);
+}
+
+.encabezado{
+    background-color: #b3404b;
+    padding: 10px;
+    border-radius: 10px;
+}

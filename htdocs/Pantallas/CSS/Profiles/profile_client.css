@@ -1,0 +1,239 @@
+.ProfileC_Container,
+.ProfileC_ContainerLists {
+    background-color: rgb(235, 235, 235);
+    border-radius: 4px;
+    display: flex;
+}
+
+
+
+.ProfileC_ContainerPhoto {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    border: 2px solid black;
+}
+
+
+.ProfileC_Containertext,
+.ProfileC_ContainertextSmall,
+.ProfileC_ListText,
+.ProfileC_ListTextDescription,
+.ProfileC_HeaderObjects {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    color: black;
+    padding: 1rem;
+}
+
+.ProfileC_ContainertextSmall {
+    font-size: smaller;
+}
+
+.ProfileC_ContainerLists {
+    background-color: rgb(184, 184, 184);
+    border-radius: 0px;
+
+}
+
+
+.ProfileC_ListDropdown {
+    background-color: rgb(184, 184, 184);
+    text-align: center;
+}
+
+
+.ProfileC_ListText {
+    font-size: larger;
+    font-weight: normal;
+    margin-bottom: -1.5rem;
+}
+
+.ProfileC_ListButtons {
+    border-radius: 4px;
+    font-size: 1rem;
+    margin: 0.5rem;
+    background-color: #b3404b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.ProfileC_ListButtons:hover {
+    background-color: #b3404b;
+    color: black;
+}
+
+.ProfileC_ListButtons:active {
+    background-color: #b3404b !important;
+    border: 2px solid black  !important;
+    color: black !important;
+}
+
+
+.ProfileC_AddListButton {
+    border-radius: 4px;
+    font-size: 1rem;
+    margin: 0.5rem;
+    background-color: #ffffff;
+    border: 3px white solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+
+.ProfileC_AddListButton:hover {
+    background-color: white;
+    border: 3px black solid;
+    color: black;
+}
+
+.ProfileC_AddListButton:active {
+    background-color: rgba(80, 78, 78, 0.8) !important;
+    color: black !important;
+}
+
+
+.ProfileC_ListImages {
+    width: 75%;
+    height: 75%;
+    margin-top: 1rem;
+    border: 3px black solid;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+
+.ProfileC_ContainerDescriptionLists {
+    border-left: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.ProfileC_ContainerCarousel {
+    height: 20rem;
+    width: 20rem;
+
+}
+
+.ProfileC_ListTextDescription {
+    font-size: larger;
+    color: rgb(0, 0, 0);
+}
+
+/* TO DO: CHECAR SI VALE LA PENA CAMBIAR LAS FLECHAS DE COLOR*/
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff0000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff0000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+
+.ProfileC_HeaderObjects {
+    font-size: large;
+    color: black;
+}
+
+.ProfileC_CardObjcts {
+    background-color: rgb(255, 255, 255);
+}
+
+.ProfileC_TextObjects{
+    font-size: medium;
+    color: black;
+    text-decoration-line: none;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.ProfileC_TextObjects:hover{
+    color: #b3404b;
+}
+
+
+
+.ProfileC_ChangeProfile {
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+    margin: 1rem;
+    font-weight: bold;
+    border: 1px black solid;
+}
+
+
+.ProfileC_ChangeProfile:hover {
+    background-color: #b3404b;
+    color: #000000;
+    border: 1px black solid;
+}
+
+.ProfileC_ChangeProfile:active {
+    background-color: #97353f !important;
+    color: #000000 !important;
+    border: 1px black solid !important;
+}
+
+.Profile_IconImage{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+
+
+/* PAGINACION  
+.btn-paginacion-color:hover {
+    color: #b3404b;
+}
+
+.btn-paginacion-color {
+    font-weight: bolder;
+    color: black;
+}
+
+.btn-paginacion-color:hover {
+    background-color: #802e37;
+    border-color: #802e37;
+    color: white;
+    font-weight: bold;
+}
+
+.page-item.active .btn-paginacion-color {
+    background-color: #b3404b;
+    border-color: #b3404b;
+    color: white;
+    font-weight: bold;
+  }
+
+  .btn:focus{
+    background-color: #802e37;
+    outline-color: #802e37;
+    border-color: #802e37;
+  }
+  .page-item.active .btn-paginacion-color {
+    background-color: #b3404b;
+    border-color: #b3404b;
+    color: white;
+    font-weight: bold;
+  }
+  button:active {
+    background-color: #c44655 !important;
+    outline-color: #c44655 !important;
+    border-color: #c44655 !important;
+  }
+
+
+  
+*/

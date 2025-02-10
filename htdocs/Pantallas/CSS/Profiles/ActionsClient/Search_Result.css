@@ -1,0 +1,91 @@
+/* Iconos de corazon */
+.icon-hover:hover {
+    border-color: #b3404b !important;
+    background-color: white !important;
+  }
+  
+.icon-hover:hover i {
+  color:#b3404b !important;
+}
+
+/* Boton de Detalles*/
+.btn-detalles {
+  background-color: #b3404b;
+  border-color: #b3404b;
+}
+
+.btn-detalles:hover {
+  background-color: #802e37;
+  border-color: #802e37;
+  font-weight: bolder;
+  
+}
+
+/* Colores de paginacion */
+.btn-paginacion-color {
+font-weight: bolder;
+  color: black;
+}
+.btn-paginacion-color:hover {
+  background-color: #802e37;
+  border-color: #802e37;
+  color: white;
+  font-weight: bold;
+}
+.page-item.active .btn-paginacion-color {
+  background-color: #b3404b;
+  border-color: #b3404b;
+  color: white;
+  font-weight: bold;
+}
+
+/* Afecta tanto a los botones normales como a los del paginador*/
+.btn:focus{
+  /* Estilos para cuando con el tab estoy sobre un boton */
+  background-color: #802e37;
+  outline-color: #802e37;
+  border-color: #802e37;
+}
+button:active {
+  /* Estilos para el estado activo (clic) del botón */
+  background-color: #c44655 !important;
+  outline-color: #c44655 !important;
+  border-color: #c44655 !important;
+}
+
+
+.Listas_DropDownMenu:hover {
+  color: white;
+  background-color: #802e37;
+  font-weight: bold;
+}
+.Listas_DropDownMenu:focus {
+  color: white;
+  background-color: #b3404b;
+}
+
+/* */
+.body, section{
+  background-color: rgb(66, 66, 66);
+}
+
+.card-Primer-Titulo {
+  background-color: #3d3d3d !important;
+  color: white;
+  font-weight: bold;
+  display: flex;  /* Necesario para que funcione lo de abajo*/
+  align-items: center; /* Alinear verticalmente al centro */
+  justify-content: center; /* Alinear horizontalmente al centro */
+}
+
+.card-titulo {
+  background-color: #b3404b;
+  color: white;
+  font-weight: bold;
+}
+
+.imagenes-busqueda {
+  width: 100%; /* Con esto las imagenes abarcaran todo el espacio de contenedor*/
+  max-height: 150px; /* Con esto las imagenes tendran una altura maxima de 150 px dentro de ese rango se adaptaran en su width*/
+  height: auto;
+}

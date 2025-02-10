@@ -1,0 +1,62 @@
+.fondo-color, body {
+    background-color: #4d4c4c;
+}
+
+/* Contorlar tamaño de imagenes */
+.imagenes-carrito {
+    width: 100%;
+    max-height: 100px;
+    height: auto;   
+}
+.border-column {
+    border: 1px solid #5757575d; /* Solo agregamos un marco a la imagen aun que no se ve muy bien*/
+}
+
+
+/* Botones */
+/* Boton de Comprar*/
+.btn-comprar {
+    background-color: #b3404b;
+    border-color: #b3404b;
+    width: 100%;
+}
+
+.btn-comprar:hover {
+    background-color: #802e37;
+    border-color: #802e37;
+    font-weight: bolder;
+}
+.btn-comprar:focus{
+/* Estilos para cuando con el tab estoy sobre un boton */
+    background-color: #802e37;
+    outline-color: #802e37;
+    border-color: #802e37;
+}
+.btn-comprar:active {
+/* Estilos para el estado activo (clic) del botón */
+    background-color: #c44655 !important;
+    outline-color: #c44655 !important;
+    border-color: #c44655 !important;
+}
+.btn-comprar i {
+    color: white !important;
+}  
+
+/* Iconos */
+.icon-hover{
+    margin-left: 5px;
+}
+.icon-hover:hover {
+    border-color: #b3404b !important;
+    background-color: white !important;
+}
+
+.icon-hover:hover i {
+  color:#b3404b !important;
+}
+
+/* Linea de separacion entre productos*/
+.linea-separacion {
+    border: none; /* Elimina el borde predeterminado */
+    border-top: 5px solid #802e37; /* Agrega un borde superior de 1 píxel de grosor en color gris */  
+}

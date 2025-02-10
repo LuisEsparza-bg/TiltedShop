@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../Librerias/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../CSS/Profiles/profile_client.css">
+    <link rel="stylesheet" href="../../../CSS/General Styles/navbar.css">
+    <link rel="stylesheet" href="../../../CSS/General Styles/footer.css">
+    <link rel="stylesheet" href="../../../CSS/General Styles/background.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR START -->
+    <div class="row Navbar_Container">
+        <div class="col-lg-3 col-sm-4">
+            <a href="../../../HTML/Profiles/Home.html"><img src="../../../Images/Tilted_Shop_Logo.png"
+                    class="Navbar_Logo" alt="Tilted Shop Icon"></a>
+
+        </div>
+
+        <div class="col-lg-6 col-sm-4 ">
+            <div class="container Navbar_SearchBar">
+                <div class="input-group">
+                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                        aria-describedby="search-addon" />
+                    <a href="../../../HTML/Profiles/Search_Result.html"
+                        class="btn btn-primary Navbar_SearchButton">Buscar</a>
+                    <div class="mt-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-1 col-sm-4">
+            <div class="dropdown">
+                <a class="btn dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                    <small> Hola <b> @Usuario </b> </small>
+                    <br>
+                    <b>Cuenta y Más </b>
+                </a>
+
+                <ul class="dropdown-menu Navbar_DropdownMenu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Client(Self)/Profile_ClientS.html">Mi Perfil</a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Client(Self)/my_orders.html">Mis pedidos</a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton"
+                            href="../../../HTML/Profiles/Client(Self)/Messages_Client.html">Mis mensajes</a></li>
+                    <li><a class="dropdown-item Navbar_DropdownButton" href="../../General/index.html">Cerrar sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="col-lg-2 col-sm-4">
+            <a href="../../../HTML/Profiles/Client(Self)/Shopping_Cart.html">
+                <img src="../../../Images/Edit_Profile_Images/Car_icon.jpg" class="Navbar_CarLogo" alt="Cart icon">
+            </a>
+            <div class="Navbar_CarText">
+                <a class="Navbar_CartHL" href="../../../HTML/Profiles/Client(Self)/Shopping_Cart.html"> Mi Carrito </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR END -->
+
+    <br>
+    <br>
+
+    <div class="row">
+
+        <!-- TO DO: Hacer offset en todo lo primero-->
+
+        <div class="ProfileC_Container col-lg-10 offset-lg-1">
+            <img src="../../../Images/Edit_Profile_Images/Profile_Photo.jpg" class="ProfileC_ContainerPhoto" alt="Cart icon">
+
+            <div class="d-flex flex-column">
+                <span class="ProfileC_Containertext">@Usuario</span>
+                <span class="ProfileC_ContainertextSmall">Usuario desde: 17/02/2020</span>
+                <a href="../../../HTML/Profiles/Client(Self)/edit_profile.html" class="btn ProfileC_ListButtons">Editar Perfil</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="row mt-3 mb-3">
+
+        <!-- TO DO: Hacer offset en todo lo primero, Alertas de borrar producto y Lista y agregar a Carrito-->
+
+
+
+
+        <div class="ProfileC_ContainerLists col-lg-10 offset-lg-1 p-0">
+            <div class=" ProfileC_ListDropdown col-lg-2 d-flex flex-column">
+                <span class="ProfileC_ListText"> Mis Listas</span>
+                <hr>
+                <div class="btn-group-lg d-flex flex-column">
+                    <a href="../../../HTML/Profiles/Client(Self)/new_list.html" class="btn ProfileC_AddListButton"> <img src="../../../Images/Icons/plus_icon.png"
+                            class="Profile_IconImage mb-1" alt="">Crear Nueva Lista</a>
+                    <button type="button" class="btn ProfileC_ListButtons">WishList</button>
+                    <button type="button" class="btn ProfileC_ListButtons">Lista de videojuegos</button>
+                    <button type="button" class="btn ProfileC_ListButtons">Lista Utiles</button>
+                </div>
+            </div>
+
+            <div class="col-lg-10 align-items-center text-center ProfileC_ContainerDescriptionLists">
+                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+                    <div class="carousel-inner ProfileC_ContainerCarousel container">
+                        <div class="carousel-item active">
+                            <img src="/Images/Items_Images/silla1.png" class="ProfileC_ListImages" alt="Imagen 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/Images/Items_Images/silla2.png" class="ProfileC_ListImages" alt="Imagen 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/Images/Items_Images/silla3.png" class="ProfileC_ListImages" alt="Imagen 3">
+                        </div>
+                        <!-- Agrega más imágenes según sea necesario -->
+                    </div>
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+
+                <p class="ProfileC_ListTextDescription">Esta mi Wishlist </p>
+                <a href="../../../HTML/Profiles/Client(Self)/edit_list.html" class="btn ProfileC_ListButtons" > <img
+                        src="../../../Images/Icons/edit_icon.png" class="Profile_IconImage mb-1" alt=""> Editar Lista</a>
+                <button class="btn ProfileC_ListButtons" onclick="DeleteList()"> <img src="../../../Images/Icons/trash_icon.png"
+                        class="Profile_IconImage mb-1" alt="" > Eliminar Lista </button>
+
+                <hr>
+                <div class="container">
+                    <p class="ProfileC_HeaderObjects">Objetos en la lista:</p>
+
+                    <div class="row">
+                        <div class="col-lg-2 mb-4">
+                            <div class="card ProfileC_CardObjcts">
+                                <img src="/Images/Items_Images/silla4.png" class="card-img-top">
+                                <h5 class="card-title"><a class="ProfileC_TextObjects" href="../../Profiles/Products_Detail.html">Silla Rosa</a></h5>
+                                <p class="card-text">Precio: $4,999.00</p>
+                                <button class="btn ProfileC_ListButtons"> Eliminar de Lista</button>
+                                <a href="#" class="btn ProfileC_ListButtons">Agregar a Carrito</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 mb-4">
+                            <div class="card ProfileC_CardObjcts">
+                                <img src="/Images/Items_Images/silla2.png" class="card-img-top">
+                                <h5 class="card-title"><a class="ProfileC_TextObjects" href="../../Profiles/Products_Detail.html">Silla
+                                        Café</a></h5>
+                                <p class="card-text">Precio: $4,999.00</p>
+                                <button class="btn ProfileC_ListButtons"> Eliminar de Lista</button>
+                                <a href="#" class="btn ProfileC_ListButtons">Agregar a Carrito</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 mb-4">
+                            <div class="card ProfileC_CardObjcts">
+                                <img src="/Images/Items_Images/silla5.png" class="card-img-top">
+                                <h5 class="card-title"><a class="ProfileC_TextObjects" href="../../Profiles/Products_Detail.html">Silla Blanca</a></h5>
+                                <p class="card-text">Precio: $4,999.00</p>
+                                <button class="btn ProfileC_ListButtons"> Eliminar de Lista</button>
+                                <a href="#" class="btn ProfileC_ListButtons">Agregar a Carrito</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 mb-4">
+                            <div class="card ProfileC_CardObjcts">
+                                <img src="/Images/Items_Images/cotizado3.png" class="card-img-top">
+                                <h5 class="card-title"><a class="ProfileC_TextObjects" href="../../Profiles/Products_DetailC.html">Cofres de Madera</a>
+                                </h5>
+                                <p class="card-text fw-bold">Producto Cotizable</p>
+                                <button class="btn ProfileC_ListButtons"> Eliminar de Lista</button>
+                                <a href="#" class="btn ProfileC_ListButtons">Cotizar</a>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-2 mb-4">
+                            <div class="card ProfileC_CardObjcts">
+                                <img src="/Images/Items_Images/Figura3.png" class="card-img-top">
+                                <h5 class="card-title"><a class="ProfileC_TextObjects" href="../../Profiles/Products_Detail.html"> Figura de Anime</a>
+                                </h5>
+                                <p class="card-text">Precio: $899.00</p>
+                                <button class="btn ProfileC_ListButtons"> Eliminar de Lista</button>
+                                <a href="#" class="btn ProfileC_ListButtons">Agregar a Carrito</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 mb-4">
+                            <div class="card ProfileC_CardObjcts">
+                                <img src="/Images/Items_Images/Figura1.png" class="card-img-top">
+                                <h5 class="card-title"><a class="ProfileC_TextObjects" href="../../Profiles/Products_Detail.html">Figura de Anime</a></h5>
+                                <p class="card-text">Precio: $1,999.00</p>
+                                <button class="btn ProfileC_ListButtons">
+                                    Eliminar de Lista
+                                </button>
+                                <a href="#" class="btn ProfileC_ListButtons">Agregar a Carrito</a>
+                            </div>
+                        </div>
+
+                        <!-- Modal de confirmación de eliminación 
+                        <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="confirmDeleteModalLabel">Confirmar Eliminación</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ¿Estás seguro de que quieres eliminar este producto de tu lista?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                        <button type="button" class="btn ProfileC_ListButtons">Eliminar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+
+                        <div class="container">
+                            <a href="../../../HTML/Profiles/Client(Self)/Profile_ClientPrivateS.html"
+                                class="btn ProfileC_ChangeProfile">Ver Versión Privada (Solo Modo de Prueba)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="../../../JS/Client/ListProfile.js"></script>
+
+        <script src="../../../Librerias/jquery/jquery-3.7.1.min.js"></script>
+        <script src="../../../Librerias/popper/popper.min.js"></script>
+        <script src="../../../Librerias/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+</body>
+
+
+
+
+</html>
